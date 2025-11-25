@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "*.cpp",
+        "-I/opt/homebrew/include/SDL2",
+        "-L/opt/homebrew/lib",
+        "-lSDL2",
+        "-o",
+        "game"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
